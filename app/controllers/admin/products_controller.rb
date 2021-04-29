@@ -26,6 +26,8 @@ class Admin::ProductsController < ApplicationController
 
   private
 
+  http_basic_authenticate_with name: "Jungle", password: "book"
+
   def product_params
     params.require(:product).permit(
       :name,
