@@ -1,5 +1,13 @@
-<h1>Admin Dashboard</h1>
+<header class='page-header'>Admin &raquo; Dashboard
+</header>
 
-<h2>Total Products Available: <%=@total_products %></h2>
-
-<h2>Total Categories Available: <%= @total_categories %></h2>
+<div class='list-group'>
+<a href="/admin/products" class='list-group-item'>
+<h3>Total Products Available:</h3> 
+<span class='label label-success'><%= @total_products %></span>
+</a>
+<a href="/admin/categories" class='list-group-item'>
+<h3>Total Categories Available:</h3>
+<span class='label label-success'><%= @total_categories %></span>
+</a>
+</div>
