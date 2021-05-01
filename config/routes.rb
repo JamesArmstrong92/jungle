@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   # Routes used to log in and out
   get  '/login'  => 'sessions#new'
   post '/login'  => 'sessions#create'
-  get  'logout'  => 'sessions#destory'
+  get  '/logout'  => 'sessions#destory'
   
   get  '/signup' => 'users#new'
   post '/users'  => 'users#create'
